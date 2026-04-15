@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============================================================
+         PRODUCT PAGE TEMPLATE — duplicate this file for each piece.
+         Rename to e.g. product-nocturne.html, product-duet.html, etc.
+         Swap the five marked sections below:
+           1. <title>   2. Breadcrumb category
+           3. Hero image (this is also the thumbnail on the grid)
+           4. Title / tagline / description / specs
+           5. Gallery images
+         ============================================================ -->
+    <title>Nocturne — William Goldberg</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-active="necklaces">
+
+<div id="wg-header-slot"></div>
+
+<!-- 2. BREADCRUMB — change the category link -->
+<div class="breadcrumb">
+    <a href="necklaces.html">&larr; Necklaces</a>
+</div>
+
+<!-- 3. HERO IMAGE — this first image is also the thumbnail on the grid -->
+<section class="product-hero">
+    <div class="product-hero-inner">
+        <!-- REPLACE src with your Cloudinary URL, or paste a Vimeo iframe in place -->
+        <img src="" alt="Nocturne — William Goldberg" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+        <div class="ph" style="display:none;"><span class="ph-kind">Hero Image</span><span class="ph-note">Drop your Cloudinary URL above</span></div>
+    </div>
+    <p style="text-align:center;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(197,162,88,0.7);margin:14px 0 0;">A</p>
+</section>
+
+<!-- 4a. TITLE BLOCK -->
+<section class="product-title">
+    <p class="eyebrow">Chapter I &middot; Necklace &middot; Concept</p>
+    <h1>The <em>Nocturne</em></h1>
+    <p class="tagline">A riviera drawn on the throat in forty-two points of light.</p>
+</section>
+
+<!-- 5. GALLERY — add as many figure blocks as you like -->
+<section style="padding:40px 40px 0;">
+    <div class="product-gallery">
+        <figure>
+            <div class="media">
+                <img src="" alt="Nocturne — front view" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+                <div class="ph" style="display:none;"><span class="ph-kind">Front View</span><span class="ph-note">Drop image</span></div>
+            </div>
+            <figcaption>B</figcaption>
+        </figure>
+        <figure>
+            <div class="media">
+                <img src="" alt="Nocturne — detail" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+                <div class="ph" style="display:none;"><span class="ph-kind">Detail</span><span class="ph-note">Drop image</span></div>
+            </div>
+            <figcaption>C</figcaption>
+        </figure>
+        <figure>
+            <div class="media">
+                <img src="" alt="Nocturne — back view" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+                <div class="ph" style="display:none;"><span class="ph-kind">Back View</span><span class="ph-note">Drop image</span></div>
+            </div>
+            <figcaption>D</figcaption>
+        </figure>
+        <figure>
+            <div class="media">
+                <!-- Example of dropping a Vimeo embed here instead of an image:
+                <iframe src="https://player.vimeo.com/video/VIDEO_ID?background=1&autoplay=1&loop=1&muted=1" allow="autoplay; fullscreen"></iframe>
+                -->
+                <img src="" alt="Nocturne — atelier film" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+                <div class="ph" style="display:none;"><span class="ph-kind">Atelier Film</span><span class="ph-note">Drop video or image</span></div>
+            </div>
+            <figcaption>E</figcaption>
+        </figure>
+    </div>
+</section>
+
+<!-- 4b. DESCRIPTION + SPECS -->
+<section>
+    <div class="product-split">
+        <div class="col-text">
+            <p>The Nocturne is a study in graduation &mdash; a classical riviera reconsidered through the Ashoka<sup>&reg;</sup> cut. Forty-two elongated cushions, beginning at just over a quarter-carat at the clasp, rising by thirds across the throat, and closing at a 2.20-carat centre stone that rests precisely at the hollow of the collarbone.</p>
+            <p>Each stone is set in a low, east-west orientation that catches light along the length of its table rather than across its crown. Worn, this produces a long, slow-breathing shimmer instead of the quick sparkle of a traditional riviera &mdash; a shimmer closer to moonlight on water than to sunlight on glass.</p>
+            <p>The connecting links are platinum, engineered to sit flush against the skin so that the necklace reads as a single continuous line of stones with no visible chain. The clasp is hidden beneath the final stone at the nape.</p>
+            <p>A piece for evening. For black. For the room she walks into last.</p>
+        </div>
+        <div class="col-specs">
+            <h4>Specifications</h4>
+            <dl class="specs" style="margin-top:0;border-top:0;padding-top:0;grid-template-columns:1fr;">
+                <div><dt>Stones</dt><dd>42 x Ashoka<sup>&reg;</sup></dd></div>
+                <div><dt>Total Carat</dt><dd>42.10 ctw</dd></div>
+                <div><dt>Centre Stone</dt><dd>2.20 ct &middot; D &middot; IF</dd></div>
+                <div><dt>Metal</dt><dd>Platinum 950</dd></div>
+                <div><dt>Length</dt><dd>16" &middot; adjustable to 17"</dd></div>
+                <div><dt>Status</dt><dd>Concept</dd></div>
+                <div><dt>Edition</dt><dd>One of One</dd></div>
+            </dl>
+        </div>
+    </div>
+</section>
+
+<!-- BACK -->
+<div class="back-cta">
+    <a href="necklaces.html">Back to Necklaces</a>
+</div>
+
+<div id="wg-footer-slot"></div>
+<script src="parts.js"></script>
+<script src="lightbox.js"></script>
+</body>
+</html>
