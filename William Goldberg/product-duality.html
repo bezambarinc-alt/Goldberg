@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Duality — William Goldberg</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-active="rings">
+
+<div id="wg-header-slot"></div>
+
+<div class="breadcrumb">
+    <a href="rings.html">&larr; Rings</a>
+</div>
+
+<section class="product-hero">
+    <div class="product-hero-inner" style="aspect-ratio:16/9;background:#2a2a2a;">
+        <iframe
+            src="https://player.vimeo.com/video/1188297297?h=27458d23bb&background=1&autoplay=1&loop=1&muted=1&autopause=0&player_id=0&app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="C0729 — The Duality"
+            style="position:absolute;inset:0;width:100%;height:100%;border:0;">
+        </iframe>
+        <button onclick="openVideoLightbox()" style="position:absolute;bottom:16px;right:16px;z-index:3;background:rgba(0,0,0,0.5);border:1px solid rgba(197,162,88,0.4);color:#c5a258;font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;cursor:pointer;backdrop-filter:blur(4px);transition:all 0.3s;" onmouseover="this.style.background='rgba(197,162,88,0.2)'" onmouseout="this.style.background='rgba(0,0,0,0.5)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="vertical-align:-2px;margin-right:6px;"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>Full Screen
+        </button>
+    </div>
+    <p style="text-align:center;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(197,162,88,0.85);margin:14px 0 0;">A</p>
+</section>
+
+<!-- Video Fullscreen Lightbox -->
+<div id="videoLightbox" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.95);align-items:center;justify-content:center;cursor:pointer;" onclick="closeVideoLightbox()">
+    <button onclick="closeVideoLightbox()" style="position:absolute;top:20px;right:24px;z-index:10000;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;font-weight:300;line-height:1;">&times;</button>
+    <div id="videoLightboxInner" style="width:90vw;height:80vh;position:relative;" onclick="event.stopPropagation()">
+        <iframe
+            id="videoLightboxFrame"
+            src=""
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="C0729 — The Duality"
+            style="position:absolute;inset:0;width:100%;height:100%;border:0;">
+        </iframe>
+    </div>
+</div>
+
+<script>
+function openVideoLightbox() {
+    var lb = document.getElementById('videoLightbox');
+    var frame = document.getElementById('videoLightboxFrame');
+    frame.src = 'https://player.vimeo.com/video/1188297297?h=27458d23bb&autoplay=1&loop=1&autopause=0&player_id=0&app_id=58479';
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+function closeVideoLightbox() {
+    var lb = document.getElementById('videoLightbox');
+    var frame = document.getElementById('videoLightboxFrame');
+    frame.src = '';
+    lb.style.display = 'none';
+    document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeVideoLightbox();
+});
+</script>
+
+<section class="product-title">
+    <p class="eyebrow">One of One &middot; Two-Stone Ring &middot; Finalized</p>
+    <h1>The <em>Duality</em></h1>
+    <p class="tagline">Two forces. One truth.</p>
+</section>
+
+<section style="padding:40px 40px 0;">
+    <div class="product-gallery">
+        <figure>
+            <div class="media">
+                <img src="" alt="Duality — B" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+            </div>
+            <figcaption>B</figcaption>
+        </figure>
+        <figure>
+            <div class="media">
+                <img src="" alt="Duality — C" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+            </div>
+            <figcaption>C</figcaption>
+        </figure>
+        <figure>
+            <div class="media">
+                <img src="" alt="Duality — D" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+            </div>
+            <figcaption>D</figcaption>
+        </figure>
+        <figure>
+            <div class="media">
+                <img src="" alt="Duality — E" onerror="var p=this.closest('figure')||this.closest('.product-hero'); if(p) p.style.display='none';">
+            </div>
+            <figcaption>E</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section>
+    <div class="product-split">
+        <div class="col-text">
+            <p>A 10.02-carat Ashoka<sup>&reg;</sup>-cut sapphire and a 9.13-carat Ashoka<sup>&reg;</sup>-cut diamond, set in a bypass formation that mirrors the ancient principle of opposing forces in perfect harmony. The deep, saturated blue of the sapphire meets the pure, ice-white brilliance of the diamond &mdash; each stone reflecting what the other is not.</p>
+            <p>The sapphire band is lined with invisible-set sapphires, extending the depth of color into the architecture of the ring itself. The diamond sits opposite, unadorned, letting the stone speak in its own language of light.</p>
+            <p>This is not a ring of compromise. It is a ring of completion &mdash; two stones of nearly equal magnitude, neither yielding to the other, bound in platinum and existing only once.</p>
+        </div>
+        <div class="col-specs">
+            <h4>Specifications</h4>
+            <dl class="specs" style="margin-top:0;border-top:0;padding-top:0;grid-template-columns:1fr;">
+                <div><dt>Centre Stones</dt><dd>Ashoka<sup>&reg;</sup> Sapphire 10.02 ct &amp; Ashoka<sup>&reg;</sup> Diamond 9.13 ct</dd></div>
+                <div><dt>Cut</dt><dd>Matching Ashoka<sup>&reg;</sup></dd></div>
+                <div><dt>Setting</dt><dd>Bypass &middot; Invisible-set sapphire band detail</dd></div>
+                <div><dt>Metal</dt><dd>Platinum 950</dd></div>
+                <div><dt>Status</dt><dd>Finalized</dd></div>
+                <div><dt>Edition</dt><dd>One of One</dd></div>
+                <div><dt>SKU</dt><dd>C0729</dd></div>
+            </dl>
+        </div>
+    </div>
+</section>
+
+<div class="back-cta">
+    <a href="rings.html">Back to Rings</a>
+</div>
+
+<div id="wg-footer-slot"></div>
+<script src="parts.js"></script>
+<script src="lightbox.js"></script>
+</body>
+</html>
